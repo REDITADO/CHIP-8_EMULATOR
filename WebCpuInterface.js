@@ -123,7 +123,6 @@ export default class WebCpuInterface extends cpuInterface{
 
         
         if(this.frameBuffer[y][x]){
-            console.log(this.frameBuffer, colision)
             this.context.fillStyle = Constants.COLOR
             this.context.fillRect(
                 x*this.multiplier,

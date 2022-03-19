@@ -82,7 +82,6 @@ export default class CPU{
             this.healted = true
             throw new Error("Memory out od bounds")
         }
-        console.log(this.memory[this.PC], (this.memory[this.PC] <<8)+'weee')
         return (this.memory[this.PC] <<8)| (this.memory[this.PC+1]<<0)
     }
     _decode(opcode){
